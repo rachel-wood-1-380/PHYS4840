@@ -1,0 +1,46 @@
+#!/usr/bin/python3.8
+#
+####################################
+#
+# Class 4 in-class exercises
+#
+import numpy as np
+#
+#
+def my_function(vector):
+	a = vector[0]
+	b = vector[1]
+	c = vector[2]
+#
+	return np.linalg.norm(vector)
+#
+vector = [1, 2, 3]
+print( my_function(vector) )
+#
+# 3a):
+#
+# 3.7416573867739413
+#
+#vector = [1, 2]
+#print( my_function(vector) )
+#
+# 3b):
+# If you give it a vector with two entries it says list index out of range
+#
+vector = [1, 2, 3, 4]
+print( my_function(vector) )
+#
+# 3b):
+# If you give it four values it returns 5.477225575051661
+#
+import my_functions_lib as mfl
+#
+vector = [1, 2, 3]
+print( mfl.my_function(vector) )
+#
+# Bonus: numpy has to imported in my_functions_lib.py, but not Lab_feb3.py
+#
+#
+#
+#
+# Excercise 5:
